@@ -1,4 +1,4 @@
-# scalatest-embed-redis
+# scalatest-embedded-redis
 
 With this project you can easily use an 
 [embedded redis](https://github.com/kstyrc/embedded-redis) in your unit tests.
