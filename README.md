@@ -43,7 +43,7 @@ import scala.concurrent.Future
 class MyTest extends AsyncFunSuite with EmbeddedRedis {
 
   test("something with redis") {
-    withRedis() { port =>
+    withRedisAsync() { port =>
       // ...
       Future.successful(succeed)
     }
