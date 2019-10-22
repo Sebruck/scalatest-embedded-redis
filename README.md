@@ -12,7 +12,7 @@ It is inspired from [scalatest-embedmongo](https://github.com/SimplyScala/scalat
 Add the following to your `build.sbt` file.
 
 ```scala
-libraryDependencies += "com.github.sebruck" %% "scalatest-embedded-redis" % "0.3.0"
+libraryDependencies += "com.github.sebruck" %% "scalatest-embedded-redis" % "0.4.0"
 ``` 
 
 For a working example have a look at the [tests](https://github.com/Sebruck/scalatest-embedded-redis/blob/master/src/main/scala/com/github/sebruck/EmbeddedRedis.scala).

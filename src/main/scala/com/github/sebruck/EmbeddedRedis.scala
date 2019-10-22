@@ -17,7 +17,7 @@ trait EmbeddedRedis {
         val port = socket.getLocalPort
         socket.close()
         port
-      case Failure(e: IOException) => getFreePort
+      case Failure(_: IOException) => getFreePort
       case Failure(e)              => throw e
     }
   }

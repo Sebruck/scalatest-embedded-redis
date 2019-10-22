@@ -4,8 +4,9 @@ lazy val root = (project in file(".")).settings(
   inThisBuild(
     List(
       organization := "com.github.sebruck",
-      scalaVersion := "2.12.3",
-      version := "0.3.0"
+      scalaVersion := "2.13.1",
+      crossScalaVersions := Seq("2.13.1", "2.12.10"),
+      version := "0.4.0"
     )),
   name := "scalatest-embedded-redis",
   libraryDependencies ++= Seq(
@@ -14,7 +15,6 @@ lazy val root = (project in file(".")).settings(
     scalaTest % Test,
     akka % Test
   ),
-  scalacOptions ++= Compiler.options,
   publishTo := Some(
     if (isSnapshot.value)
       Opts.resolver.sonatypeSnapshots
