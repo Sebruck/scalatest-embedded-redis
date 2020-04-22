@@ -2,7 +2,8 @@ package com.github.sebruck
 
 import akka.actor.ActorSystem
 import org.scalatest.concurrent.ScalaFutures
-import org.scalatest.{AsyncFlatSpec, Matchers}
+import org.scalatest.flatspec.AsyncFlatSpec
+import org.scalatest.matchers.should.Matchers
 import redis.RedisClient
 import redis.actors.NoConnectionException
 
